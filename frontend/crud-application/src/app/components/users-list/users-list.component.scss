@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Căn nút PDF bên trái và nút Thêm người dùng bên phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  width: 100%; /* Đảm bảo chiếm đủ chiều rộng của container */
+  margin-bottom: 20px; /* Khoảng cách dưới hàng nút */
+}
+
+.button-container a,
+.button-container button {
+  margin: 0; /* Đảm bảo không có khoảng cách ngoài mặc định */
+}
+
+.input-group-text {
+  background-color: transparent; /* Make it transparent */
+  border: none; /* Remove border */
+}
+
+.input-group-text i {
+  color: #000; /* Change the color of the arrow */
+  font-size: 0.8em; /* Adjust the size of the arrow if needed */
+}

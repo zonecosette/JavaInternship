@@ -1,0 +1,44 @@
+<div class="header d-flex justify-content-between align-items-center" *ngIf="!isLoginPage() && !isRegisterPage()">
+  <div class="logo"> <!-- You can add a logo or brand name here --> </div>
+  <div class="user-menu d-flex justify-content-end align-items-center">
+    <span class="welcome-text me-2">Chào mừng, {{ currentUser?.username }}</span>
+    <div class="dropdown">
+      <button class="dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa fa-user-circle"></i> <!-- Icon for user -->
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="userDropdown">
+        <li><button class="dropdown-item logout" (click)="logout()"><i class="fa fa-sign-out-alt"></i> Log out</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <ul class="navbar-nav">
+  </ul>
+</nav>
+
+<!-- Chỉ hiển thị phần sidebar và content khi không phải là trang login -->
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div *ngIf="!isLoginPage() && !isRegisterPage()" class="sidebar bg-light p-3" style="width: 300px;">
+    <h4 class="sidebar-title">Hệ thống</h4>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/users-list">Danh sách người dùng</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/add-user">Thêm người dùng</a>
+      </li>
+      <!-- Add more items to the sidebar as needed -->
+    </ul>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content-container flex-grow-1 p-4">
+    <h2 style="text-align: center;">{{title}}</h2>
+    <hr>
+    <router-outlet></router-outlet>
+  </div>
+</div>

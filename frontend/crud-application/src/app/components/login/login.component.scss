@@ -1,0 +1,72 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Giới hạn chiều rộng tối đa */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Cải thiện bóng đổ */
+  background-color: #fff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #f15b2a;
+  margin-bottom: 20px;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8faff; /* Thêm nền sáng */
+}
+
+.login-button {
+  width: 100%;
+  background-color: #007bff; /* Sử dụng màu xanh Bootstrap */
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Màu tối hơn khi hover */
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.register-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

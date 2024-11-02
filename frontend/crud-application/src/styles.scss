@@ -1,0 +1,33 @@
+/* Main layout for sidebar and content */
+.d-flex {
+  display: flex;
+}
+
+.sidebar {
+  height: 100vh;
+  background-color: #e9b30f;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  padding: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.content-container {
+  width: 100%;
+}
+
+.container {
+  margin-top: 40px;
+}
